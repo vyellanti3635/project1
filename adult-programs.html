@@ -119,28 +119,27 @@
         </div>
       </div>
       <div class="footer-phones">
-        <div class="row justify-content-center text-center">
-          <div class="col-6 col-md-4 col-lg-2">
-            <h4>Orange County</h4>
-            <a href="tel:+19494500777">(949) 450-0777</a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <h4>San Diego County</h4>
-            <a href="tel:+17606039400">(760) 603-9400</a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <h4>Los Angeles County</h4>
-            <a href="tel:+16268361200">(626) 836-1200</a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <h4>Northern California</h4>
-            <a href="tel:+14082791700">(408) 279-1700</a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <h4>Denver</h4>
-            <a href="tel:+17203447700">(720) 344-7700</a>
-          </div>
-        </div>
+        <table class="phone-table">
+          <caption>Call the Splashes region nearest you</caption>
+          <thead>
+            <tr>
+              <th scope="col">Orange County</th>
+              <th scope="col">San Diego County</th>
+              <th scope="col">Los Angeles County</th>
+              <th scope="col">Northern California</th>
+              <th scope="col">Denver</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-region="Orange County"><a href="tel:+19494500777">(949) 450-0777</a></td>
+              <td data-region="San Diego County"><a href="tel:+17606039400">(760) 603-9400</a></td>
+              <td data-region="Los Angeles County"><a href="tel:+16268361200">(626) 836-1200</a></td>
+              <td data-region="Northern California"><a href="tel:+14082791700">(408) 279-1700</a></td>
+              <td data-region="Denver"><a href="tel:+17203447700">(720) 344-7700</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="row align-items-center footer-bottom">
         <div class="col-md-8">
@@ -200,6 +199,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
+  <script src="js/awards.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>

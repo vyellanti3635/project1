@@ -89,18 +89,9 @@
     <section class="awards" aria-labelledby="awardsTitle">
       <div class="container">
         <h2 id="awardsTitle" class="section-title">Awards We&rsquo;ve Won</h2>
-        <ul class="awards-grid">
-          <li><img src="images/awards/colorado-parenting-family-fav2021.png" alt="Colorado Parent Family Favorites Winner 2021"></li>
-          <li><img src="images/awards/bay-area-parent-gold2020.png" alt="Bay Area Parent Family Favorite 2020"></li>
-          <li><img src="images/awards/mla-swim-lessons-winner-2020-250x250.png" alt="Hulafrog's Most Loved Swim Lessons 2020"></li>
-          <li><img src="images/awards/colorado-parenting-family-fav2020.png" alt="Colorado Parent Family Favorites Top 3 Winner 2020"></li>
-          <li><img src="images/awards/website-parenting-oc-2019.jpeg" alt="Parenting OC Readers' Choice 2019"></li>
-          <li><img src="images/awards/colorado-parenting-family-fav2019.jpeg" alt="Colorado Parent Family Favorites Winner 2019"></li>
-          <li><img src="images/awards/bay-area-parent-2019.jpeg" alt="Bay Area Parent Family Favorite 2019"></li>
-          <li><img src="images/awards/best-of-la-kids-winner.jpeg" alt="Best of LA Kids Winner"></li>
-          <li><img src="images/awards/gold-daisy-award-finalist-2018.jpeg" alt="Gold Daisy Awards Finalist 2018"></li>
-          <li><img src="images/awards/best-of-the-best-2018.jpeg" alt="Colorado Community Media Best of the Best 2018"></li>
-        </ul>
+        <div id="awardsApp">
+          <awards-grid v-bind:awards="awards"></awards-grid>
+        </div>
       </div>
     </section>
 
@@ -135,28 +126,27 @@
         </div>
       </div>
       <div class="footer-phones">
-        <div class="row justify-content-center text-center">
-          <div class="col-6 col-md-4 col-lg-2">
-            <h4>Orange County</h4>
-            <a href="tel:+19494500777">(949) 450-0777</a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <h4>San Diego County</h4>
-            <a href="tel:+17606039400">(760) 603-9400</a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <h4>Los Angeles County</h4>
-            <a href="tel:+16268361200">(626) 836-1200</a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <h4>Northern California</h4>
-            <a href="tel:+14082791700">(408) 279-1700</a>
-          </div>
-          <div class="col-6 col-md-4 col-lg-2">
-            <h4>Denver</h4>
-            <a href="tel:+17203447700">(720) 344-7700</a>
-          </div>
-        </div>
+        <table class="phone-table">
+          <caption>Call the Splashes region nearest you</caption>
+          <thead>
+            <tr>
+              <th scope="col">Orange County</th>
+              <th scope="col">San Diego County</th>
+              <th scope="col">Los Angeles County</th>
+              <th scope="col">Northern California</th>
+              <th scope="col">Denver</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-region="Orange County"><a href="tel:+19494500777">(949) 450-0777</a></td>
+              <td data-region="San Diego County"><a href="tel:+17606039400">(760) 603-9400</a></td>
+              <td data-region="Los Angeles County"><a href="tel:+16268361200">(626) 836-1200</a></td>
+              <td data-region="Northern California"><a href="tel:+14082791700">(408) 279-1700</a></td>
+              <td data-region="Denver"><a href="tel:+17203447700">(720) 344-7700</a></td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="row align-items-center footer-bottom">
         <div class="col-md-8">
@@ -216,6 +206,7 @@
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
+  <script src="js/awards.js"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
