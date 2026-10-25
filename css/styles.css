@@ -1,0 +1,134 @@
+:root {
+  --white: #FFFFFF;
+  --mist: #E4EAEA;
+  --navy: #1A2E38;
+  --charcoal: #444444;
+  --slate: #757576;
+  --splash-blue: #03B1F4;
+  --splash-blue-light: #B3E6F9;
+  --font-heading: 'Bodoni Moda', 'Times New Roman', serif;
+  --font-body: 'Open Sans', Arial, Helvetica, sans-serif;
+  --font-decorative: 'Henny Penny', cursive;
+  --navbar-height: 64px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  line-height: 1.6;
+  color: var(--charcoal);
+  background-color: var(--white);
+  padding-top: var(--navbar-height);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-heading);
+  font-weight: 700;
+  color: var(--charcoal);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--splash-blue);
+  text-decoration: underline;
+}
+
+a:hover,
+a:focus {
+  color: var(--navy);
+}
+
+strong {
+  font-weight: 700;
+}
+
+em {
+  font-style: italic;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.btn-splash,
+.btn-splash-outline {
+  display: inline-block;
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 0.6rem 1.75rem;
+  border-radius: 50rem;
+  border: 2px solid var(--splash-blue);
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.btn-splash {
+  background-color: var(--splash-blue);
+  color: var(--white);
+}
+
+.btn-splash:hover,
+.btn-splash:focus {
+  background-color: var(--white);
+  color: var(--splash-blue);
+  text-decoration: none;
+}
+
+.btn-splash-outline {
+  background-color: var(--white);
+  color: var(--splash-blue);
+}
+
+.btn-splash-outline:hover,
+.btn-splash-outline:focus {
+  background-color: var(--splash-blue);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.btn-splash:disabled,
+.btn-splash.disabled {
+  background-color: var(--splash-blue-light);
+  border-color: var(--splash-blue-light);
+  color: var(--white);
+  cursor: not-allowed;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+}
