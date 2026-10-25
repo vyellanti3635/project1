@@ -263,6 +263,45 @@
     </div>
   </footer>
 
+  <!-- Register / Sign In modal -->
+  <div class="modal fade signin-modal" id="signInModal" tabindex="-1" role="dialog" aria-labelledby="signInTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+      <div class="modal-content">
+        <button type="button" class="close signin-close" data-dismiss="modal" aria-label="Close">&times;</button>
+        <div class="signin-brand">
+          <img src="images/splash-wave.png" alt="Splashes">
+        </div>
+        <div class="signin-card">
+          <img src="images/shark-full.png" alt="" class="signin-shark" aria-hidden="true">
+          <h2 id="signInTitle" class="signin-title">Sign In</h2>
+          <form id="signInForm" class="signin-form" action="#" method="post" novalidate>
+            <div class="form-group signin-name d-none">
+              <label for="signInName">Full Name <span class="required">*</span></label>
+              <input type="text" class="form-control" id="signInName" name="fullName" autocomplete="name">
+              <small class="form-text invalid-feedback">Please enter your full name.</small>
+            </div>
+            <div class="form-group">
+              <label for="signInEmail">Email <span class="required">*</span></label>
+              <input type="email" class="form-control" id="signInEmail" name="email" autocomplete="email" required>
+              <small class="form-text invalid-feedback">Please enter a valid email address.</small>
+            </div>
+            <div class="form-group">
+              <label for="signInPassword">Password <span class="required">*</span></label>
+              <input type="password" class="form-control" id="signInPassword" name="password" autocomplete="current-password" minlength="6" required>
+              <small class="form-text invalid-feedback">Password must be at least 6 characters.</small>
+            </div>
+            <p class="text-right forgot-link"><a href="#">Forgot Password?</a></p>
+            <div class="alert alert-success signin-message d-none" role="status"></div>
+            <div class="signin-actions">
+              <button type="submit" class="btn-splash btn-block signin-submit" disabled>Sign In</button>
+              <button type="button" class="btn-splash-outline btn-block signin-switch">Sign Up</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.min.js"></script>
