@@ -25,12 +25,165 @@
 <body>
 
   <!-- Navigation -->
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top site-navbar" aria-label="Main navigation">
+      <div class="container-fluid px-lg-4">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo-small.png" alt="Splashes Aquatics Swim School" class="brand-logo">
+        </a>
+        <button class="navbar-toggler splash-toggler" type="button" data-toggle="collapse" data-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
+          <span class="toggler-bar"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav ml-auto align-items-lg-center">
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="swimming-lessons.html">Swimming Lessons</a></li>
+            <li class="nav-item"><a class="nav-link" href="swim-programs.html">Swim Programs</a></li>
+            <li class="nav-item"><a class="nav-link" href="adult-programs.html">Adult Programs</a></li>
+            <li class="nav-item dropdown mega-dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="locationsMenu" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Locations</a>
+              <div class="dropdown-menu mega-menu" aria-labelledby="locationsMenu">
+                <div class="container">
+                  <div class="row" id="locationsList">
+                    <div class="col-md-4 mega-region">
+                      <h3 class="mega-region-title">Orange County</h3>
+                      <ul>
+                        <li><a href="#">Anaheim Hills @ LA Fitness</a></li>
+                        <li><a href="#">Huntington Beach</a></li>
+                        <li><a href="#">Irvine</a></li>
+                        <li><a href="#">Yorba Linda @ LA Fitness</a></li>
+                      </ul>
+                      <h3 class="mega-region-title">San Diego County</h3>
+                      <ul>
+                        <li><a href="#">Carlsbad</a></li>
+                        <li><a href="#">Poway @ LA Fitness</a></li>
+                      </ul>
+                      <h3 class="mega-region-title">San Francisco</h3>
+                      <ul>
+                        <li><a href="#">San Francisco-20th Avenue @ City Sports Club</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4 mega-region">
+                      <h3 class="mega-region-title">San Gabriel Valley</h3>
+                      <ul>
+                        <li><a href="#">Alhambra-Fremont @ LA Fitness</a></li>
+                        <li><a href="#">Arcadia @ LA Fitness</a></li>
+                        <li><a href="#">Diamond Bar @ LA Fitness</a></li>
+                        <li><a href="#">Pasadena</a></li>
+                        <li><a href="#">West Covina @ LA Fitness</a></li>
+                      </ul>
+                      <h3 class="mega-region-title">Los Angeles County</h3>
+                      <ul>
+                        <li><a href="#">Culver City @ LA Fitness</a></li>
+                        <li><a href="#">Harbor City @ LA Fitness</a></li>
+                      </ul>
+                    </div>
+                    <div class="col-md-4 mega-region">
+                      <h3 class="mega-region-title">Silicon Valley</h3>
+                      <ul>
+                        <li><a href="#">North San Jose @ City Sports Club</a></li>
+                        <li><a href="#">San Jose-Almaden @ City Sports Club</a></li>
+                        <li><a href="#">San Jose-Bascom</a></li>
+                        <li><a href="#">San Jose-Blossom Hill @ City Sports Club</a></li>
+                        <li><a href="#">Sunnyvale @ City Sports Club</a></li>
+                      </ul>
+                      <h3 class="mega-region-title">Alameda County</h3>
+                      <ul>
+                        <li><a href="#">Hayward @ City Sports Club</a></li>
+                      </ul>
+                      <h3 class="mega-region-title">Denver</h3>
+                      <ul>
+                        <li><a href="#">Highlands Ranch</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+            <li class="nav-item ml-lg-3 mt-2 mt-lg-0">
+              <a class="btn-splash-outline btn-register" href="#" data-toggle="modal" data-target="#signInModal">Register / Sign In</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
 
   <!-- Main content -->
   <main>
+    <section class="container py-5"><h1>Home placeholder</h1><p>Scroll test content.</p></section>
   </main>
 
   <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-logo text-center">
+        <a href="index.html"><img src="images/wave-small.png" alt="Splashes"></a>
+      </div>
+      <div class="row align-items-center footer-links-row">
+        <div class="col-lg-8">
+          <ul class="footer-links">
+            <li><a href="about.html">About</a></li>
+            <li><a href="#" data-toggle="dropdown-locations">Locations</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#" data-toggle="modal" data-target="#signInModal">Register / Sign In</a></li>
+            <li><a href="#">Careers</a></li>
+          </ul>
+        </div>
+        <div class="col-lg-4">
+          <ul class="social-icons">
+            <li><a href="#" class="social linkedin" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a></li>
+            <li><a href="#" class="social instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a></li>
+            <li><a href="#" class="social twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a></li>
+            <li><a href="#" class="social yelp" aria-label="Yelp"><i class="fab fa-yelp"></i></a></li>
+            <li><a href="#" class="social facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a></li>
+            <li><a href="#" class="social youtube" aria-label="YouTube"><i class="fab fa-youtube"></i></a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-phones">
+        <div class="row justify-content-center text-center">
+          <div class="col-6 col-md-4 col-lg-2">
+            <h4>Orange County</h4>
+            <a href="tel:+19494500777">(949) 450-0777</a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <h4>San Diego County</h4>
+            <a href="tel:+17606039400">(760) 603-9400</a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <h4>Los Angeles County</h4>
+            <a href="tel:+16268361200">(626) 836-1200</a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <h4>Northern California</h4>
+            <a href="tel:+14082791700">(408) 279-1700</a>
+          </div>
+          <div class="col-6 col-md-4 col-lg-2">
+            <h4>Denver</h4>
+            <a href="tel:+17203447700">(720) 344-7700</a>
+          </div>
+        </div>
+      </div>
+      <div class="row align-items-center footer-bottom">
+        <div class="col-md-8">
+          <ul class="sponsor-logos">
+            <li><img src="images/sponsors/footer-usssa-logo-2.png" alt="United States Swim School Association"></li>
+            <li><img src="images/sponsors/footer-ndpa-logo.png" alt="National Drowning Prevention Alliance"></li>
+            <li><img src="images/sponsors/footer-member-issa-logo.png" alt="International Swim Schools Association member"></li>
+            <li><img src="images/sponsors/footer-stop-drowning-now-logo.png" alt="Stop Drowning Now"></li>
+          </ul>
+        </div>
+        <div class="col-md-4 text-md-right copyright">
+          <p>&copy; 2022 Splashes.<br>All Rights Reserved</p>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
