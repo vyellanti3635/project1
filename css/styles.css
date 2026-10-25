@@ -588,3 +588,86 @@ img {
     max-height: 110px;
   }
 }
+
+.hero-page {
+  min-height: 300px;
+}
+
+.hero-page .hero-title {
+  font-size: 2.75rem;
+}
+
+.hero-about {
+  background-image: url("../images/about-us-hero.jpeg");
+}
+
+.hero-lessons {
+  background-image: url("../images/which-lesson-is-best.jpeg");
+}
+
+.philosophy,
+.good-job {
+  padding: 4rem 0;
+  text-align: center;
+}
+
+.philosophy {
+  background: linear-gradient(rgba(255, 255, 255, 0.55), rgba(255, 255, 255, 0.55)), url("../images/about-our-philosophy-bg.jpeg") center / cover no-repeat;
+}
+
+.good-job {
+  background: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("../images/about-we-do-a-pretty-good-job-bg.jpeg") center / cover no-repeat;
+}
+
+.philosophy h2,
+.good-job h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.philosophy p,
+.good-job p {
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 0.9rem;
+}
+
+.testimonial-link {
+  margin-top: 2rem;
+}
+
+.lesson-types {
+  padding: 3rem 0 4rem;
+}
+
+.lesson-types .container {
+  max-width: 1040px;
+}
+
+.lesson {
+  margin-bottom: 2rem;
+  font-size: 0.9rem;
+}
+
+.lesson h3 {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.lesson p {
+  margin-bottom: 0.5rem;
+  line-height: 1.8;
+}
+
+@media (max-width: 575.98px) {
+  .hero-page .hero-title {
+    font-size: 2rem;
+  }
+  .philosophy h2,
+  .good-job h2 {
+    font-size: 2rem;
+  }
+}
