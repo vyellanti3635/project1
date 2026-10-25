@@ -107,4 +107,43 @@ $(function () {
   });
 
   $modal.on('hidden.bs.modal', resetForm);
+
+  var $locationsList = $('#locationsList');
+
+  function renderLocationColumn(regions) {
+    var $column = $('<div class="col-md-4 mega-region"></div>');
+    $.each(regions, function (index, region) {
+      var $list = $('<ul></ul>');
+      $.each(region.schools, function (schoolIndex, school) {
+        $list.append($('<li></li>').append($('<a href="#"></a>').text(school)));
+      });
+      $column.append($('<h3 class="mega-region-title"></h3>').text(region.name)).append($list);
+    });
+    return $column;
+  }
+
+  function renderLocations(data) {
+    var regions = data.regions || [];
+    var perColumn = Math.ceil(regions.length / 3);
+    var columns = [];
+    for (var i = 0; i < regions.length; i += perColumn) {
+      columns.push(regions.slice(i, i + perColumn));
+    }
+    $locationsList.empty();
+    $.each(columns, function (index, group) {
+      $locationsList.append(renderLocationColumn(group));
+    });
+  }
+
+  function loadLocations() {
+    $.ajax({
+      url: 'data/locations.json',
+      dataType: 'json',
+      cache: true
+    }).done(renderLocations).fail(function (jqXHR, textStatus) {
+      $locationsList.html('<div class="col-12 locations-status is-error">Locations could not be loaded (' + textStatus + '). Please call your nearest region.</div>');
+    });
+  }
+
+  loadLocations();
 });

@@ -917,3 +917,14 @@ img {
     width: 64px;
   }
 }
+
+.locations-status {
+  font-size: 0.85rem;
+  color: var(--slate);
+  text-align: center;
+  padding: 0.5rem 0;
+}
+
+.locations-status.is-error {
+  color: #C9485B;
+}

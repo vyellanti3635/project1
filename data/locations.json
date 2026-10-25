@@ -1,0 +1,44 @@
+{
+  "regions": [
+    {
+      "name": "Orange County",
+      "phone": "(949) 450-0777",
+      "schools": ["Anaheim Hills @ LA Fitness", "Huntington Beach", "Irvine", "Yorba Linda @ LA Fitness"]
+    },
+    {
+      "name": "San Gabriel Valley",
+      "phone": "(626) 836-1200",
+      "schools": ["Alhambra-Fremont @ LA Fitness", "Arcadia @ LA Fitness", "Diamond Bar @ LA Fitness", "Pasadena", "West Covina @ LA Fitness"]
+    },
+    {
+      "name": "Silicon Valley",
+      "phone": "(408) 279-1700",
+      "schools": ["North San Jose @ City Sports Club", "San Jose-Almaden @ City Sports Club", "San Jose-Bascom", "San Jose-Blossom Hill @ City Sports Club", "Sunnyvale @ City Sports Club"]
+    },
+    {
+      "name": "San Diego County",
+      "phone": "(760) 603-9400",
+      "schools": ["Carlsbad", "Poway @ LA Fitness"]
+    },
+    {
+      "name": "Los Angeles County",
+      "phone": "(626) 836-1200",
+      "schools": ["Culver City @ LA Fitness", "Harbor City @ LA Fitness"]
+    },
+    {
+      "name": "Alameda County",
+      "phone": "(408) 279-1700",
+      "schools": ["Hayward @ City Sports Club"]
+    },
+    {
+      "name": "San Francisco",
+      "phone": "(408) 279-1700",
+      "schools": ["San Francisco-20th Avenue @ City Sports Club"]
+    },
+    {
+      "name": "Denver",
+      "phone": "(720) 344-7700",
+      "schools": ["Highlands Ranch"]
+    }
+  ]
+}
