@@ -707,3 +707,73 @@ img {
 .program-locations li {
   margin-bottom: 0.35rem;
 }
+
+.hero-contact {
+  background-image: url("../images/contact-hero.jpeg");
+}
+
+.contact-options {
+  padding: 3rem 0 4rem;
+}
+
+.contact-intro {
+  max-width: 520px;
+  margin: 0 auto 3rem;
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+.contact-grid {
+  max-width: 760px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.contact-grid li {
+  margin-bottom: 2.5rem;
+  text-align: center;
+}
+
+.contact-tile {
+  display: inline-block;
+  text-decoration: none;
+}
+
+.contact-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 130px;
+  height: 130px;
+  margin: 0 auto 0.75rem;
+  background-color: var(--white);
+  border: 1px solid var(--mist);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.contact-icon img {
+  width: 80px;
+  height: 80px;
+}
+
+.contact-label {
+  display: block;
+  max-width: 150px;
+  margin: 0 auto;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-decoration: underline;
+  color: var(--splash-blue);
+}
+
+.contact-tile:hover .contact-icon,
+.contact-tile:focus .contact-icon {
+  transform: translateY(-4px);
+  border-color: var(--splash-blue);
+  box-shadow: 0 8px 18px rgba(3, 177, 244, 0.25);
+}
+
+.contact-tile:hover .contact-label {
+  color: var(--navy);
+}
