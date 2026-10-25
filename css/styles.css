@@ -472,7 +472,7 @@ img {
 }
 
 .hero-home {
-  min-height: 70vh;
+  min-height: 600px;
   background-image: url("../images/home.jpeg");
 }
 
@@ -622,7 +622,7 @@ img {
     font-size: 1.75rem;
   }
   .hero-home {
-    min-height: 60vh;
+    min-height: 480px;
   }
   .locations-copy h2 {
     font-size: 1.9rem;

@@ -23,3 +23,23 @@ Locations open as a dropdown from the navigation bar and Register / Sign In open
 - `js/` site scripts
 - `data/` JSON loaded with Ajax
 - `images/` provided brand assets
+
+## Requirements coverage
+
+- Headings, paragraphs, lists, links and images on every page
+- HTML comments mark the navigation, main content, footer and modal regions
+- HTML table: regional phone numbers in the footer
+- Form with submit button: Register / Sign In modal
+- CSS3 layout and styling in `css/styles.css` on top of a CSS reset
+- JavaScript interactions: active nav link, locations menu shortcut, form validation
+- jQuery components: sign-in modal with live validation, and the locations mega menu loaded from `data/locations.json` with Ajax
+- Bootstrap 4 grid, navbar, dropdown, modal and utilities throughout
+- Vue component: `awards-grid` renders the awards on the Home and About pages
+
+## Screenshots
+
+Full-page captures of every page at desktop (1280px) and phone (375px) width are in `screenshots/`.
+
+## Running locally
+
+Serve the folder over HTTP (for example VS Code Live Server) so the Ajax request for the locations file works. Opening the HTML files directly from disk blocks that request in Chrome.
