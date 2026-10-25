@@ -671,3 +671,39 @@ img {
     font-size: 2rem;
   }
 }
+
+.hero-programs {
+  background-image: url("../images/summer-swim-camps.jpeg");
+}
+
+.hero-adult {
+  background-image: url("../images/lap-swimming.jpeg");
+}
+
+.program {
+  padding: 3rem 0 4rem;
+  font-size: 0.9rem;
+}
+
+.program .container {
+  max-width: 1040px;
+}
+
+.program .section-title {
+  margin-bottom: 1.5rem;
+}
+
+.program p {
+  line-height: 1.8;
+}
+
+.program h3 {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin: 1.5rem 0 0.75rem;
+}
+
+.program-locations li {
+  margin-bottom: 0.35rem;
+}
